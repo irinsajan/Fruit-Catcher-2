@@ -26,12 +26,14 @@ class Game{
                 form = new Form()
                 form.display();
             }
-    players=[player1,player2];
+    
     player1 = createSprite(200,500);
     player1.addImage("player1",player_img);
     
     player2 = createSprite(800,500);
     player2.addImage("player2", player_img);
+        
+    players=[player1,player2];
     
 
         }
@@ -53,8 +55,8 @@ class Game{
                      x = 500-allPlayers[plr].distance;
                      y=500;
                      
-                     allPlayers[index -1].x = x;
-                     allPlayers[index - 1].y = y;
+                     players[index -1].x = x;
+                     players[index - 1].y = y;
                        
                      if(index === player.index){
                          
